@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+    .card{
+        width: 90% !important;
+    }
+    .card-img{
+        display: none !important;
+    }
+}
