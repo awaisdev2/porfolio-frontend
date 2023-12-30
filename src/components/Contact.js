@@ -54,7 +54,7 @@ const Contact = () => {
             onSubmit={props.handleSubmit}
           >
             <div>
-              <label className="my-2 block">name</label>
+              <label className="my-2 block">Name</label>
               <Field
                 type="text"
                 name="name"
@@ -83,12 +83,12 @@ const Contact = () => {
             </div>
             <div>
               <label className="block">Message</label>
-              <Field
-                type="text"
+              <textarea
+                rows="3"
                 name="message"
                 placeholder="Your Message here"
-                className="my-2 w-full rounded-lg text-black"
-              />
+                className="my-2 p-2 w-full rounded-lg text-black"
+              ></textarea>
               <ErrorMessage
                 name="message"
                 component="div"

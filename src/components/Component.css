@@ -1,8 +1,38 @@
 @media (max-width: 767px) {
-    .card{
-        width: 90% !important;
-    }
-    .card-img{
-        display: none !important;
-    }
+  .card {
+    width: 90% !important;
+  }
+  .card-img {
+    display: none !important;
+  }
+}
+.icon-container {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon-container:hover {
+  transform: scale(1.3);
+  color: wheat;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+.project{
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+.project:hover {
+  transform: scale(0.9);
+  animation: glow 10s;
 }
